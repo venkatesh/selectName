@@ -1,0 +1,5 @@
+<select  [(ngModel)]='optionSelected' (ngModelChange)='onOptionsSelected()'>
+  <!-- <option>SELECT CAR</option> -->
+<option *ngFor="let item of dataObj"  [value]="item.car">{{item.car}}</option>
+</select>
+<button (click)="navPage()">Click Me!</button>
